@@ -13,3 +13,4 @@ vim.cmd("set autoindent")
 vim.cmd("set smarttab")
 vim.keymap.set('n', '<C-h>', '<C-w>h', {})
 vim.keymap.set('n', '<C-l>', '<C-w>l',{})
+vim.o.shell = "pwsh.exe"
