@@ -1,4 +1,4 @@
-# 🚀 VaglitoCode
+# 🚀 Persona config NeoVim
 
 
 ## Keymaps
