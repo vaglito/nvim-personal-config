@@ -1,4 +1,5 @@
 vim.g.mapleader = ' ' -- use space
+vim.g.maploalleader = ' '
 
 vim.keymap.set("n", "<leader><leader>", function()
     local buf_name = vim.api.nvim_buf_get_name(0)

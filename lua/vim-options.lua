@@ -40,3 +40,20 @@ vim.keymap.set('n', '<C-k>', '<C-w>k', { desc = "Move to above split" })
 
 -- Shell (Windows)
 vim.o.shell = "pwsh.exe"
+
+
+local function set_transparent()
+  local groups = {
+    "Normal", "NormalNC", "Comment", "Constant", "Special", "Identifier",
+    "Statement", "PreProc", "Type", "Underlined", "Todo", "String",
+    "Function", "Conditional", "Repeat", "Operator", "Structure",
+    "LineNr", "NonText", "SignColumn", "CursorLine", "CursorLineNr",
+    "StatusLine", "StatusLineNC", "EndOfBuffer",
+  }
+  for _, group in ipairs(groups) do
+    vim.api.nvim_set_hl(0, group, { bg = "NONE", ctermbg = "NONE" })
+  end
+end
+
+-- Ejecutar la función
+set_transparent()
