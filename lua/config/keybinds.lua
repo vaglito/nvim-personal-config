@@ -1,4 +1,5 @@
 vim.g.mapleader = ' ' -- use space
+vim.g.maploalleader = ' '
 
 vim.keymap.set("n", "<leader><leader>", function()
     local buf_name = vim.api.nvim_buf_get_name(0)
@@ -20,15 +21,15 @@ vim.keymap.set("n", "<leader><leader>", function()
     end
 end, { desc = "Source solo archivos compatibles" })
 
---GUARDAR ARCHIVO RÁPIDO
+-- GUARDAR ARCHIVO RÁPIDO
 vim.keymap.set('n', '<leader>w', function()
     print("Guardando archivo...")
     vim.cmd.w()
     print("¡Guardado!")
-end, opts, { desc = "Guardar cambios" })
--- Atajo: Espacio + w
+end, { desc = "Guardar cambios" })
 
+-- SALIR DEL ARCHIVO
 vim.keymap.set('n', '<leader>q', function()
     print("Saliendo del archivo...")
     vim.cmd.q()
-end, opts, { desc = "salir del archivo"})
+end, { desc = "Salir del archivo" })
