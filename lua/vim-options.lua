@@ -6,7 +6,6 @@ vim.opt.showcmd = true
 vim.opt.showmatch = true
 vim.opt.encoding = "utf-8"
 vim.opt.syntax = "enable"
-
 -- Indentation
 vim.opt.expandtab = true
 vim.opt.tabstop = 4
@@ -43,16 +42,16 @@ vim.o.shell = "pwsh.exe"
 
 
 local function set_transparent()
-  local groups = {
-    "Normal", "NormalNC", "Comment", "Constant", "Special", "Identifier",
-    "Statement", "PreProc", "Type", "Underlined", "Todo", "String",
-    "Function", "Conditional", "Repeat", "Operator", "Structure",
-    "LineNr", "NonText", "SignColumn", "CursorLine", "CursorLineNr",
-    "StatusLine", "StatusLineNC", "EndOfBuffer",
-  }
-  for _, group in ipairs(groups) do
-    vim.api.nvim_set_hl(0, group, { bg = "NONE", ctermbg = "NONE" })
-  end
+	local groups = {
+		"Normal", "NormalNC", "Comment", "Constant", "Special", "Identifier",
+		"Statement", "PreProc", "Type", "Underlined", "Todo", "String",
+		"Function", "Conditional", "Repeat", "Operator", "Structure",
+		"LineNr", "NonText", "SignColumn", "CursorLine", "CursorLineNr",
+		"StatusLine", "StatusLineNC", "EndOfBuffer",
+	}
+	for _, group in ipairs(groups) do
+		vim.api.nvim_set_hl(0, group, { bg = "NONE", ctermbg = "NONE" })
+	end
 end
 
 -- Ejecutar la función
