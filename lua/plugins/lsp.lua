@@ -10,8 +10,13 @@ return {
 				}
 			}
 		})
+		vim.lsp.config('jdtls', {
+			cmd = {'jdtls'}
+		})
 		vim.lsp.enable({
 			'pyright',
+			'ts_ls',
+			'jdtls',
 		})
 	end
 }
