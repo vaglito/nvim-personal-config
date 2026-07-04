@@ -15,8 +15,10 @@ return {
 		})
 		vim.lsp.enable({
 			'pyright',
-			'ts_ls',
+			'vtsls',
 			'jdtls',
+			'nginx_language_server',
+			'tailwindcss',
 		})
 	end
 }
