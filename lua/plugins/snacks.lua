@@ -4,7 +4,18 @@ return {
 	lazy = false,
 	opts = {
 		explorer = { enabled = true },
-		picker = { enabled = true },
+		picker = { 
+			enabled = true,
+			hidden = true,
+			sources = {
+				files = {
+					hidden = true,
+				},
+				explorer = {
+					hidden = true,
+				}
+			}
+		},
 	},
 	keys = {
 	{ "<leader><space>", function() Snacks.picker.smart() end, desc = "Smart Find Files" },
