@@ -22,5 +22,11 @@ return {
     { "<leader>,", function() Snacks.picker.buffers() end, desc = "Buffers" },
     { "<leader>/", function() Snacks.picker.grep() end, desc = "Grep" },
     { "<leader>e", function() Snacks.explorer() end, desc = "File Explorer" },
-  }
+-- 🚀 CODEX: Abrir desde modo normal, ocultar desde la terminal con Ctrl+x
+		{ "<leader>cx", function() Snacks.terminal.toggle("codex", { win = { position = "float", border = "rounded", width = 0.85, height = 0.85 }, cwd = vim.fn.expand("%:p:h") }) end, mode = "n", desc = "Abrir Codex" },
+		{ "<C-x>", function() Snacks.terminal.toggle("codex") end, mode = "t", desc = "Ocultar Codex (Conserva historial)" },
+
+		-- 💻 TERMINAL: Abrir desde modo normal, ocultar desde la terminal con Ctrl+t
+		{ "<leader>tt", function() Snacks.terminal.toggle(nil, { win = { position = "float", border = "rounded", width = 0.85, height = 0.85 }, cwd = vim.fn.expand("%:p:h") }) end, mode = "n", desc = "Abrir Terminal" },
+		{ "<C-t>", function() Snacks.terminal.toggle(nil) end, mode = "t", desc = "Ocultar Terminal (Conserva historial)" },  }
 }

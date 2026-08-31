@@ -1,10 +1,11 @@
 return { 
 	"catppuccin/nvim",
 	name = "catppuccin",
+	lazy = false,
 	priority = 1000,
 	config = function() 
 		require("catppuccin").setup({
-			flavour = "auto", -- latte, frappe, macchiato, mocha
+			flavour = "macchiato", -- latte, frappe, macchiato, mocha
 			background = { -- :h background
 				light = "latte",
 				dark = "mocha",
@@ -60,7 +61,7 @@ return {
 			color_overrides = {},
 			custom_highlights = {},
 			default_integrations = true,
-			auto_integrations = false,
+			auto_integrations = true,
 			integrations = {
 				cmp = true,
 				gitsigns = true,
@@ -75,6 +76,5 @@ return {
 		})
 
 		-- setup must be called before loading
-		vim.cmd.colorscheme "catppuccin-macchiato"
 	end
 }

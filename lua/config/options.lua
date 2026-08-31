@@ -8,7 +8,18 @@ vim.opt.shiftwidth = 4
 vim.opt.clipboard = "unnamedplus"
 vim.opt.swapfile = false
 vim.opt.termguicolors = true
-
+vim.g.clipboard = {
+  name = 'WSL_Clipboard',
+  copy = {
+    ['+'] = 'clip.exe',
+    ['*'] = 'clip.exe',
+  },
+  paste = {
+    ['+'] = 'powershell.exe -NoProfile -Command "Get-Clipboard"',
+    ['*'] = 'powershell.exe -NoProfile -Command "Get-Clipboard"',
+  },
+  cache_enabled = 0,
+}
 vim.diagnostic.config({
 	virtual_text = true
 })
