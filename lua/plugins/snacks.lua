@@ -16,6 +16,16 @@ return {
 				}
 			}
 		},
+		statuscolumn = {
+			enabled = true,
+			left = { "mark", "sign" }, -- Prioridad de signos a la izquierda (marcas, diagnósticos)
+			right = { "fold", "git" }, -- Prioridad de signos a la derecha (pliegues/folds, git)
+			folds = {
+				open = false, -- Muestra el ícono de pliegue cerrado; al hacer clic o presionar 'za' se abre/cierra
+				git_hl = false,
+			},
+			refresh = 50,
+		},
 	},
 	keys = {
 	{ "<leader><space>", function() Snacks.picker.smart() end, desc = "Smart Find Files" },

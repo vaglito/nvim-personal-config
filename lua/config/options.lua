@@ -23,3 +23,10 @@ vim.g.clipboard = {
 vim.diagnostic.config({
 	virtual_text = true
 })
+
+-- Pliegues de código (compatible con Snacks statuscolumn y Treesitter)
+vim.opt.foldmethod = "expr"
+vim.opt.foldexpr = "v:lua.vim.treesitter.foldexpr()"
+vim.opt.foldlevel = 99
+vim.opt.foldtext = ""
+
