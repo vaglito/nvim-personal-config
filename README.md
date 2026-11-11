@@ -2,6 +2,8 @@
 
 Personal Neovim setup powered by `lazy.nvim`.
 
+Opening `nvim` without a file shows the VaglitoIDE dashboard. Its shortcuts are `f` files, `n` new file, `r` recent files, `g` text search, `e` explorer, `c` this configuration, `L` plugins, and `q` quit. Open a file directly to skip the dashboard.
+
 ## Keymaps
 
 `<leader>` is the Space key. The table documents custom mappings configured by this repository; plugin defaults are not included.

@@ -3,6 +3,24 @@ return {
 	priority = 1000,
 	lazy = false,
 	opts = {
+		dashboard = {
+			preset = {
+				header = [[
+╭────────────────────────────╮
+│         VaglitoIDE         │
+╰────────────────────────────╯]],
+				keys = {
+					{ icon = " ", key = "f", desc = "Buscar archivos", action = ":lua Snacks.picker.files()" },
+					{ icon = " ", key = "n", desc = "Nuevo archivo", action = ":ene | startinsert" },
+					{ icon = " ", key = "r", desc = "Archivos recientes", action = ":lua Snacks.dashboard.pick('oldfiles')" },
+					{ icon = " ", key = "g", desc = "Buscar texto", action = ":lua Snacks.picker.grep()" },
+					{ icon = " ", key = "e", desc = "Explorador", action = ":lua Snacks.explorer()" },
+					{ icon = " ", key = "c", desc = "Configuración", action = ":lua Snacks.picker.files({ cwd = vim.fn.stdpath('config') })" },
+					{ icon = "󰒲 ", key = "L", desc = "Plugins", action = ":Lazy" },
+					{ icon = " ", key = "q", desc = "Salir", action = ":qa" },
+				},
+			},
+		},
 		explorer = { enabled = true },
 		picker = { 
 			enabled = true,
