@@ -5,7 +5,7 @@ return {
 	build = ':TSUpdate',
 	config = function ()
 		require('nvim-treesitter').setup()
-		local lenguajes = {'java', 'javascript', 'lua', 'html', 'python', 'css', 'typescript', 'json', 'markdown', 'nginx', 'toml', 'yaml'}
+		local lenguajes = {'java', 'javascript', 'lua', 'html', 'python', 'css', 'typescript', 'json', 'markdown', 'markdown_inline', 'nginx', 'toml', 'yaml'}
 
 		vim.defer_fn(function()
 			require('nvim-treesitter').install(lenguajes)

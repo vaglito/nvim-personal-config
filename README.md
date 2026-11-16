@@ -16,6 +16,7 @@ Opening `nvim` without a file shows the VaglitoIDE dashboard. Its shortcuts are 
 | Normal | `gB` | Go to the previous buffer. |
 | Normal | `gd` | Delete the current buffer. |
 | Normal, Visual | `<leader>f` | Format the file or selected range asynchronously through Conform, falling back to the LSP. |
+| Normal | `<leader>mt` | Toggle Markdown rendering. |
 
 ### Navigation and search
 
