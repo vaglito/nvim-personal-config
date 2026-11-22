@@ -2,7 +2,6 @@
 pyright
 vtsls
 jdtls
-nginx_language_server
 tailwindcss
 html
 cssls
