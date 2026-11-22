@@ -2,6 +2,8 @@
 
 Personal Neovim setup powered by `lazy.nvim`.
 
+The LSP servers managed by Mason are listed in [`lsp-servers.txt`](lsp-servers.txt). Add or remove one server name per line; the same list controls automatic installation and LSP enabling.
+
 Opening `nvim` without a file shows the VaglitoIDE dashboard. Its shortcuts are `f` files, `n` new file, `r` recent files, `g` text search, `e` explorer, `c` this configuration, `L` plugins, and `q` quit. Open a file directly to skip the dashboard.
 
 ## Keymaps

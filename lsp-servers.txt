@@ -1,0 +1,10 @@
+# Neovim LSP server names (nvim-lspconfig / Mason-LSPConfig)
+pyright
+vtsls
+jdtls
+nginx_language_server
+tailwindcss
+html
+cssls
+jsonls
+lua_ls
